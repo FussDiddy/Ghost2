@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606375539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 474.4624, y: 103.0675, z: -1}
-  m_LocalScale: {x: 48.40267, y: 53.050137, z: 1}
+  m_LocalPosition: {x: 957.9755, y: 210.5194, z: -1}
+  m_LocalScale: {x: 98.45301, y: 108.69442, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -284,8 +284,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770515397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 476.3405, y: 267.0189, z: 0}
-  m_LocalScale: {x: 92.17549, y: 104.05872, z: 1}
+  m_LocalPosition: {x: 961.7957, y: 546.4456, z: 0}
+  m_LocalScale: {x: 187.4887, y: 213.2059, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -344,7 +344,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 254.27429
+  orthographic size: 524.6871
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -368,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798219239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 476.3405, y: 263.8, z: -10}
+  m_LocalPosition: {x: 966, y: 557, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -402,16 +402,16 @@ RectTransform:
   m_GameObject: {fileID: 1811544573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2132062191}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.7103, y: -119.2143}
-  m_SizeDelta: {x: 864.3005, y: 69.4085}
+  m_AnchoredPosition: {x: -28.1941, y: -326}
+  m_SizeDelta: {x: 1145.8734, y: 184.4413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811544575
 MonoBehaviour:
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -60.091675, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

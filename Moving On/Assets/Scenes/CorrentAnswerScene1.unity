@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79181208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 476.3405, y: 267.0189, z: 0}
-  m_LocalScale: {x: 92.17549, y: 104.05872, z: 1}
+  m_LocalPosition: {x: 960.5082, y: 540.0071, z: 0}
+  m_LocalScale: {x: 186.73831, y: 210.6981, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -284,8 +284,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127017481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 474.4624, y: 103.0675, z: -1}
-  m_LocalScale: {x: 48.40267, y: 53.050137, z: 1}
+  m_LocalPosition: {x: 956.7033, y: 208.0436, z: -1}
+  m_LocalScale: {x: 98.05897, y: 107.41592, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -420,16 +420,16 @@ RectTransform:
   m_GameObject: {fileID: 1858227387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1258304400}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.7103, y: -119.2143}
-  m_SizeDelta: {x: 864.3005, y: 69.4085}
+  m_AnchoredPosition: {x: -74.55051, y: -253.39713}
+  m_SizeDelta: {x: 1077.197, y: 96.879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858227389
 MonoBehaviour:
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -73.82703, w: -20.602905}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -581,7 +581,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 254.27429
+  orthographic size: 528.87195
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -605,7 +605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018949376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 476.3405, y: 263.8, z: -10}
+  m_LocalPosition: {x: 965, y: 545, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
