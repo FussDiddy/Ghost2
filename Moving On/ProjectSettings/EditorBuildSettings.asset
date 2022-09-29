@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroGameplayScene.unity
     guid: d67082002a589924ab75d48725a0ca75
+  - enabled: 1
+    path: Assets/Scenes/CorrentAnswerScene1.unity
+    guid: 9b1fcfb3a06936d42883278aec982a58
+  - enabled: 1
+    path: Assets/Scenes/WrongAnswerScene1.unity
+    guid: 7fed5f650f5146b418614649e730f619
   m_configObjects: {}
