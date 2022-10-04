@@ -14,6 +14,8 @@ public class typewriterUI : MonoBehaviour
 	[SerializeField] string leadingChar = "";
 	[SerializeField] bool leadingCharBeforeDelay = false;
 
+	public GameObject answerPanel;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -35,6 +37,7 @@ public class typewriterUI : MonoBehaviour
 
 			StartCoroutine("TypeWriterTMP");
 		}
+
 	}
 
 	IEnumerator TypeWriterText()
@@ -75,7 +78,10 @@ public class typewriterUI : MonoBehaviour
 			_tmpProText.text += c;
 			_tmpProText.text += leadingChar;
 			yield return new WaitForSeconds(timeBtwChars);
+			
 		}
+
+		answerPanel.gameObject.SetActive(true);
 
 		if (leadingChar != "")
 		{
