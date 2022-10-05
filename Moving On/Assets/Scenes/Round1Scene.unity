@@ -648,6 +648,9 @@ MonoBehaviour:
   targetPanel: {fileID: 1883014909}
   answerCorrect: 0
   questionWorth: 10
+  answerGroup: {fileID: 1179069550}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &116997971
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +940,9 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  answerPanel: {fileID: 732193624}
+  answerGroup: {fileID: 732193629}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!114 &190160521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,7 +1418,9 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  answerPanel: {fileID: 1179069545}
+  answerGroup: {fileID: 1179069550}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &325458422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,6 +1703,9 @@ MonoBehaviour:
   targetPanel: {fileID: 1883014909}
   answerCorrect: 0
   questionWorth: 10
+  answerGroup: {fileID: 1179069550}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &398925074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2273,9 @@ MonoBehaviour:
   targetPanel: {fileID: 1883014909}
   answerCorrect: 0
   questionWorth: 10
+  answerGroup: {fileID: 1179069550}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &645659004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,7 +2533,9 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  answerPanel: {fileID: 1322226267}
+  answerGroup: {fileID: 1322226272}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!114 &671709225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,6 +2857,7 @@ GameObject:
   - component: {fileID: 732193627}
   - component: {fileID: 732193626}
   - component: {fileID: 732193625}
+  - component: {fileID: 732193629}
   m_Layer: 5
   m_Name: Answer UI Panel
   m_TagString: Untagged
@@ -2861,7 +2877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df52c935464a9f244bbf83d034826aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerBox: {fileID: 732193624}
+  answerGroup: {fileID: 732193629}
 --- !u!114 &732193626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2922,6 +2938,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 32}
   m_SizeDelta: {x: -64, y: 150}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!225 &732193629
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732193624}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &753549021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3693,6 +3721,7 @@ GameObject:
   - component: {fileID: 1179069548}
   - component: {fileID: 1179069547}
   - component: {fileID: 1179069549}
+  - component: {fileID: 1179069550}
   m_Layer: 5
   m_Name: Answer UI Panel
   m_TagString: Untagged
@@ -3774,7 +3803,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df52c935464a9f244bbf83d034826aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerBox: {fileID: 1179069545}
+  answerGroup: {fileID: 1179069550}
+--- !u!225 &1179069550
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179069545}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1187683142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,6 +3995,9 @@ MonoBehaviour:
   targetPanel: {fileID: 398925074}
   answerCorrect: 1
   questionWorth: 10
+  answerGroup: {fileID: 1179069550}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1218443772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,6 +4236,7 @@ GameObject:
   - component: {fileID: 1322226270}
   - component: {fileID: 1322226269}
   - component: {fileID: 1322226268}
+  - component: {fileID: 1322226272}
   m_Layer: 5
   m_Name: Response 1 UI Panel
   m_TagString: Untagged
@@ -4211,7 +4256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df52c935464a9f244bbf83d034826aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerBox: {fileID: 1322226267}
+  answerGroup: {fileID: 1322226272}
 --- !u!114 &1322226269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4272,6 +4317,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 32}
   m_SizeDelta: {x: -64, y: 150}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!225 &1322226272
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322226267}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1415164693
 GameObject:
   m_ObjectHideFlags: 0

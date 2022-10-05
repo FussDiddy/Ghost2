@@ -14,7 +14,10 @@ public class typewriterUI : MonoBehaviour
 	[SerializeField] string leadingChar = "";
 	[SerializeField] bool leadingCharBeforeDelay = false;
 
-	public GameObject answerPanel;
+	public CanvasGroup answerGroup;
+
+	public bool fadeIn = false;
+	public bool fadeOut = false;
 
 	// Use this for initialization
 	void Start()
@@ -40,6 +43,23 @@ public class typewriterUI : MonoBehaviour
 
 	}
 
+	//Fade in Answer panel
+	private void Update()
+	{
+		if (fadeIn)
+		{
+			if (answerGroup.alpha <= 1)
+			{
+				answerGroup.alpha += Time.deltaTime * 4;
+				if (answerGroup.alpha == 1)
+				{
+					fadeIn = false;
+				}
+			}
+		}
+	}
+
+	//Unused
 	IEnumerator TypeWriterText()
 	{
 		_text.text = leadingCharBeforeDelay ? leadingChar : "";
@@ -63,6 +83,7 @@ public class typewriterUI : MonoBehaviour
 		}
 	}
 
+	//Animates text
 	IEnumerator TypeWriterTMP()
 	{
 		_tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
@@ -81,11 +102,15 @@ public class typewriterUI : MonoBehaviour
 			
 		}
 
-		answerPanel.gameObject.SetActive(true);
-
+		//Activates answer panel
+		fadeIn = true;
+		
+		//Unused
 		if (leadingChar != "")
 		{
 			_tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
 		}
 	}
+
+
 }

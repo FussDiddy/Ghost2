@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AnswersAppear : MonoBehaviour
 {
-    public GameObject answerBox;
+    public CanvasGroup answerGroup;
 
     // Start is called before the first frame update
     void Start()
@@ -14,15 +14,10 @@ public class AnswersAppear : MonoBehaviour
         
     }
 
+    //Keeps answer panel hidden until typewriter UI activates it
     public void DisableAnswerPanel()
     {
-        answerBox.gameObject.SetActive(false);
-    }
-
-    IEnumerator AnswerPanelAppear()
-    {
-        yield return new WaitForSeconds(5);
-        answerBox.gameObject.SetActive(true);
+        answerGroup.alpha = 0;
     }
 
 

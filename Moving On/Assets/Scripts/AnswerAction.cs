@@ -9,6 +9,11 @@ public class AnswerAction : MonoBehaviour
     public bool answerCorrect;
     public int questionWorth;
 
+    public CanvasGroup answerGroup;
+
+    public bool fadeIn = false;
+    public bool fadeOut = false;
+
     public void ClickAction()
     {
         if(answerCorrect == true)
@@ -17,7 +22,37 @@ public class AnswerAction : MonoBehaviour
             ScoreManager.instance.AddPoints(questionWorth);
         }
 
-        //Move to correct response text
+        fadeOut = true;
+
+        //Move to response text
+        StartCoroutine("MoveToNextCanvas");
+
+    }
+
+    private void Update()
+    {
+        if (fadeOut)
+        {
+            if (answerGroup.alpha >= 0)
+            {
+                answerGroup.alpha -= Time.deltaTime * 4;
+                if (answerGroup.alpha == 0)
+                {
+                    fadeOut = false;
+                }
+            }
+        }
+    }
+
+    private void FadeOutAction()
+    {
+
+       
+    }
+
+    IEnumerator MoveToNextCanvas()
+    {
+        yield return new WaitForSeconds(1);
         currentPanel.SetActive(false);
         targetPanel.SetActive(true);
     }

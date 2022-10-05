@@ -23,6 +23,7 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    //Adds points to the players score based on how many points the question is worth
     public void AddPoints(int points)
     {
         score += points;
