@@ -20,6 +20,8 @@ public class TransitionToInterview : MonoBehaviour
 
 	public ScoreManager scoreManager;
 
+	public int passingScore;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -89,7 +91,7 @@ public class TransitionToInterview : MonoBehaviour
 		}
 
 		//Send player to next round or to death scene based on score
-		if (scoreManager.score > 10)
+		if (scoreManager.score > passingScore)
 		{
 			StartCoroutine(MoveToNextRound(nextRoundScene));
 		}
