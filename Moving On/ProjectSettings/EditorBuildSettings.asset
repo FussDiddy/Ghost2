@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoundCompleteTemp.unity
     guid: 2910f819622bf044891933655eefb8ee
+  - enabled: 1
+    path: Assets/Scenes/Interview1Scene.unity
+    guid: eb56ce7482858644fb075cb1a443d993
   m_configObjects: {}
