@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Round Complete!
+  m_text: End of demo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29713eb1dbfebc24ba964719eeb1e40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmatotal: 0
+  karmaTotal: 0
 --- !u!4 &2094114737
 Transform:
   m_ObjectHideFlags: 0
