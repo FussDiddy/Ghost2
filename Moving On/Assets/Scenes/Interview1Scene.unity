@@ -3151,7 +3151,7 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  nextRoundScene: 6
+  nextRoundScene: 4
 --- !u!1 &889124925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,7 +3565,7 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  nextRoundScene: 6
+  nextRoundScene: 4
 --- !u!1 &987721903
 GameObject:
   m_ObjectHideFlags: 0

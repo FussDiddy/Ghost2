@@ -17,19 +17,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/IntroGameplayScene.unity
     guid: d67082002a589924ab75d48725a0ca75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CorrentAnswerScene1.unity
     guid: 9b1fcfb3a06936d42883278aec982a58
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WrongAnswerScene1.unity
     guid: 7fed5f650f5146b418614649e730f619
   - enabled: 1
-    path: Assets/Scenes/YouDied.unity
-    guid: 2635d824f8fbc0e40b51c1d0dfc4311b
+    path: Assets/Scenes/Interview1Scene.unity
+    guid: eb56ce7482858644fb075cb1a443d993
   - enabled: 1
     path: Assets/Scenes/RoundCompleteTemp.unity
     guid: 2910f819622bf044891933655eefb8ee
   - enabled: 1
-    path: Assets/Scenes/Interview1Scene.unity
-    guid: eb56ce7482858644fb075cb1a443d993
+    path: Assets/Scenes/YouDied.unity
+    guid: 2635d824f8fbc0e40b51c1d0dfc4311b
   m_configObjects: {}
