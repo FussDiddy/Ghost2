@@ -2204,7 +2204,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 129358495}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -2262,17 +2262,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 129358488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 1883014909}
   targetPanel: {fileID: 326420747}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
   answerGroup: {fileID: 732193629}
   fadeIn: 0
   fadeOut: 0
@@ -2571,8 +2565,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154930400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.129, y: -1.9490001, z: 0}
-  m_LocalScale: {x: 0.1832692, y: 0.1832692, z: 0.1832692}
+  m_LocalPosition: {x: 12.129, y: -1.92, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770688871}
@@ -3280,7 +3274,7 @@ GameObject:
   - component: {fileID: 250436391}
   - component: {fileID: 250436390}
   - component: {fileID: 250436389}
-  - component: {fileID: 250436388}
+  - component: {fileID: 250436394}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -3310,29 +3304,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &250436388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250436386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 644015339}
-  targetPanel: {fileID: 1758051842}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 493170038}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &250436389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,8 +3373,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 250436388}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 250436394}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -3452,6 +3423,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250436386}
   m_CullTransparentMesh: 1
+--- !u!114 &250436394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250436386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 644015339}
+  targetPanel: {fileID: 1758051842}
+  answerGroup: {fileID: 493170038}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &265594706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,7 +3454,7 @@ GameObject:
   - component: {fileID: 265594711}
   - component: {fileID: 265594710}
   - component: {fileID: 265594709}
-  - component: {fileID: 265594708}
+  - component: {fileID: 265594714}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -3496,29 +3484,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &265594708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265594706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 677555087}
-  targetPanel: {fileID: 1511574074}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 738861336}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &265594709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3588,8 +3553,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 265594708}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 265594714}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -3638,6 +3603,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265594706}
   m_CullTransparentMesh: 1
+--- !u!114 &265594714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265594706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 677555087}
+  targetPanel: {fileID: 1511574074}
+  answerGroup: {fileID: 738861336}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &283243732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,7 +4178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 320479008}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -4254,17 +4236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 320479001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 1883014909}
   targetPanel: {fileID: 326420747}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
   answerGroup: {fileID: 732193629}
   fadeIn: 0
   fadeOut: 0
@@ -4694,7 +4670,7 @@ GameObject:
   - component: {fileID: 325577437}
   - component: {fileID: 325577436}
   - component: {fileID: 325577435}
-  - component: {fileID: 325577434}
+  - component: {fileID: 325577440}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -4724,29 +4700,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &325577434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325577432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1800631016}
-  targetPanel: {fileID: 962827425}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 366722925}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &325577435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4816,8 +4769,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 325577434}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 325577440}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -4866,6 +4819,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325577432}
   m_CullTransparentMesh: 1
+--- !u!114 &325577440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325577432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1800631016}
+  targetPanel: {fileID: 962827425}
+  answerGroup: {fileID: 366722925}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &326420747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,7 +5226,7 @@ Transform:
   m_GameObject: {fileID: 352985050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.813, y: -2.1002002, z: 0}
-  m_LocalScale: {x: 1.2899, y: 1.2899, z: 1.2899}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770688871}
@@ -6525,7 +6495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &429539487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7483,7 +7453,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 484771998}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -7541,17 +7511,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 484771991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 398925074}
   targetPanel: {fileID: 326420747}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
   answerGroup: {fileID: 1322226272}
   fadeIn: 0
   fadeOut: 0
@@ -8971,8 +8935,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649745865}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.604, y: -1.9260001, z: 0}
-  m_LocalScale: {x: 0.1832692, y: 0.1832692, z: 0.1832692}
+  m_LocalPosition: {x: 9.604, y: -1.702, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770688871}
@@ -10622,7 +10586,7 @@ GameObject:
   - component: {fileID: 771993196}
   - component: {fileID: 771993195}
   - component: {fileID: 771993194}
-  - component: {fileID: 771993193}
+  - component: {fileID: 771993199}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -10652,29 +10616,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &771993193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 771993191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 2125140549}
-  targetPanel: {fileID: 1511574074}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 1229432281}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &771993194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10744,8 +10685,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 771993193}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 771993199}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -10794,6 +10735,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771993191}
   m_CullTransparentMesh: 1
+--- !u!114 &771993199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771993191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 2125140549}
+  targetPanel: {fileID: 1511574074}
+  answerGroup: {fileID: 1229432281}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &772414023
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,7 +11505,7 @@ GameObject:
   - component: {fileID: 861865448}
   - component: {fileID: 861865447}
   - component: {fileID: 861865446}
-  - component: {fileID: 861865445}
+  - component: {fileID: 861865451}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -11577,29 +11535,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &861865445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861865443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 644015339}
-  targetPanel: {fileID: 1758051842}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 493170038}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &861865446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11669,8 +11604,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 861865445}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 861865451}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -11719,6 +11654,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861865443}
   m_CullTransparentMesh: 1
+--- !u!114 &861865451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861865443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 644015339}
+  targetPanel: {fileID: 1758051842}
+  answerGroup: {fileID: 493170038}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &862241099
 GameObject:
   m_ObjectHideFlags: 0
@@ -12395,7 +12347,7 @@ GameObject:
   - component: {fileID: 882027949}
   - component: {fileID: 882027948}
   - component: {fileID: 882027947}
-  - component: {fileID: 882027946}
+  - component: {fileID: 882027952}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -12425,29 +12377,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &882027946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882027944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 506004024}
-  targetPanel: {fileID: 1214273559}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 1028495234}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &882027947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12517,8 +12446,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 882027946}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 882027952}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -12567,6 +12496,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882027944}
   m_CullTransparentMesh: 1
+--- !u!114 &882027952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882027944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 506004024}
+  targetPanel: {fileID: 1214273559}
+  answerGroup: {fileID: 1028495234}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &882378587
 GameObject:
   m_ObjectHideFlags: 0
@@ -15908,7 +15854,7 @@ GameObject:
   - component: {fileID: 1213921253}
   - component: {fileID: 1213921252}
   - component: {fileID: 1213921251}
-  - component: {fileID: 1213921250}
+  - component: {fileID: 1213921256}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -15938,29 +15884,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &1213921250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213921248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1204762015}
-  targetPanel: {fileID: 1214273559}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 913142802}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1213921251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16030,8 +15953,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1213921250}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1213921256}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -16080,6 +16003,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213921248}
   m_CullTransparentMesh: 1
+--- !u!114 &1213921256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213921248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1204762015}
+  targetPanel: {fileID: 1214273559}
+  answerGroup: {fileID: 913142802}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1214273559
 GameObject:
   m_ObjectHideFlags: 0
@@ -16296,7 +16236,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1218443779}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -16354,17 +16294,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1218443772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 398925074}
   targetPanel: {fileID: 326420747}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
   answerGroup: {fileID: 1322226272}
   fadeIn: 0
   fadeOut: 0
@@ -17086,6 +17020,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1284318931}
   - component: {fileID: 1284318932}
+  - component: {fileID: 1284318933}
+  - component: {fileID: 1284318934}
   m_Layer: 0
   m_Name: RaccoonNeutral
   m_TagString: Untagged
@@ -17101,8 +17037,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284318930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.1616, y: -1.881, z: 0}
-  m_LocalScale: {x: 0.1832692, y: 0.1832692, z: 0.1832692}
+  m_LocalPosition: {x: 8.1616, y: -1.81, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770688871}
@@ -17160,6 +17096,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1284318933
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284318930}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fce6db2a1839366408d7beb0c81501a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1284318934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284318930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5406f45a65952c4a9ba6464229d63c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1284318933}
 --- !u!1 &1300598398
 GameObject:
   m_ObjectHideFlags: 0
@@ -17174,7 +17143,7 @@ GameObject:
   - component: {fileID: 1300598403}
   - component: {fileID: 1300598402}
   - component: {fileID: 1300598401}
-  - component: {fileID: 1300598400}
+  - component: {fileID: 1300598406}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -17204,29 +17173,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &1300598400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300598398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 677555087}
-  targetPanel: {fileID: 1511574074}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 738861336}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1300598401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17296,8 +17242,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1300598400}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1300598406}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -17346,6 +17292,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300598398}
   m_CullTransparentMesh: 1
+--- !u!114 &1300598406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300598398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 677555087}
+  targetPanel: {fileID: 1511574074}
+  answerGroup: {fileID: 738861336}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1302434717
 GameObject:
   m_ObjectHideFlags: 0
@@ -18896,7 +18859,7 @@ GameObject:
   - component: {fileID: 1481897141}
   - component: {fileID: 1481897140}
   - component: {fileID: 1481897139}
-  - component: {fileID: 1481897138}
+  - component: {fileID: 1481897144}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -18926,29 +18889,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1481897138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481897136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1204762015}
-  targetPanel: {fileID: 1214273559}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 913142802}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1481897139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19018,8 +18958,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1481897138}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1481897144}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -19068,6 +19008,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481897136}
   m_CullTransparentMesh: 1
+--- !u!114 &1481897144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481897136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1204762015}
+  targetPanel: {fileID: 1214273559}
+  answerGroup: {fileID: 913142802}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1485761365
 GameObject:
   m_ObjectHideFlags: 0
@@ -20410,8 +20367,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576622493}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.377, y: -1.9260001, z: 0}
-  m_LocalScale: {x: 0.1832692, y: 0.1832692, z: 0.1832692}
+  m_LocalPosition: {x: 13.377, y: -1.72, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 770688871}
@@ -20998,7 +20955,7 @@ GameObject:
   - component: {fileID: 1634070026}
   - component: {fileID: 1634070025}
   - component: {fileID: 1634070024}
-  - component: {fileID: 1634070023}
+  - component: {fileID: 1634070029}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -21028,29 +20985,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1634070023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634070021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1259824446}
-  targetPanel: {fileID: 962827425}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 912375548}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1634070024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21120,8 +21054,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1634070023}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1634070029}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -21170,6 +21104,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634070021}
   m_CullTransparentMesh: 1
+--- !u!114 &1634070029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634070021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1259824446}
+  targetPanel: {fileID: 962827425}
+  answerGroup: {fileID: 912375548}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1636342919
 GameObject:
   m_ObjectHideFlags: 0
@@ -22230,7 +22181,7 @@ GameObject:
   - component: {fileID: 1712405277}
   - component: {fileID: 1712405276}
   - component: {fileID: 1712405275}
-  - component: {fileID: 1712405274}
+  - component: {fileID: 1712405280}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -22260,29 +22211,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1712405274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712405272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 506004024}
-  targetPanel: {fileID: 1214273559}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 1028495234}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1712405275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22352,8 +22280,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1712405274}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1712405280}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -22402,6 +22330,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712405272}
   m_CullTransparentMesh: 1
+--- !u!114 &1712405280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712405272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 506004024}
+  targetPanel: {fileID: 1214273559}
+  answerGroup: {fileID: 1028495234}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1727171457
 GameObject:
   m_ObjectHideFlags: 0
@@ -22802,7 +22747,7 @@ GameObject:
   - component: {fileID: 1737126466}
   - component: {fileID: 1737126465}
   - component: {fileID: 1737126464}
-  - component: {fileID: 1737126463}
+  - component: {fileID: 1737126469}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -22832,29 +22777,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1737126463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737126461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1800631016}
-  targetPanel: {fileID: 962827425}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 366722925}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1737126464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22924,8 +22846,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1737126463}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1737126469}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -22974,6 +22896,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737126461}
   m_CullTransparentMesh: 1
+--- !u!114 &1737126469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737126461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1800631016}
+  targetPanel: {fileID: 962827425}
+  answerGroup: {fileID: 366722925}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1748495384
 GameObject:
   m_ObjectHideFlags: 0
@@ -22992,7 +22931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1748495385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23091,7 +23030,7 @@ GameObject:
   - component: {fileID: 1748998054}
   - component: {fileID: 1748998053}
   - component: {fileID: 1748998052}
-  - component: {fileID: 1748998051}
+  - component: {fileID: 1748998057}
   m_Layer: 5
   m_Name: ResponseA
   m_TagString: Untagged
@@ -23121,29 +23060,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1748998051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748998049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1171666689}
-  targetPanel: {fileID: 1758051842}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 101098128}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1748998052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23213,8 +23129,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1748998051}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1748998057}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -23263,6 +23179,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748998049}
   m_CullTransparentMesh: 1
+--- !u!114 &1748998057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748998049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1171666689}
+  targetPanel: {fileID: 1758051842}
+  answerGroup: {fileID: 101098128}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1750879236
 GameObject:
   m_ObjectHideFlags: 0
@@ -23610,7 +23543,7 @@ GameObject:
   - component: {fileID: 1780322148}
   - component: {fileID: 1780322147}
   - component: {fileID: 1780322146}
-  - component: {fileID: 1780322145}
+  - component: {fileID: 1780322151}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -23640,29 +23573,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &1780322145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780322143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 2125140549}
-  targetPanel: {fileID: 1511574074}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 1229432281}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1780322146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23732,8 +23642,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1780322145}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1780322151}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -23782,6 +23692,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780322143}
   m_CullTransparentMesh: 1
+--- !u!114 &1780322151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780322143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 2125140549}
+  targetPanel: {fileID: 1511574074}
+  answerGroup: {fileID: 1229432281}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1781674050
 GameObject:
   m_ObjectHideFlags: 0
@@ -25946,7 +25873,7 @@ GameObject:
   - component: {fileID: 1946058437}
   - component: {fileID: 1946058436}
   - component: {fileID: 1946058435}
-  - component: {fileID: 1946058434}
+  - component: {fileID: 1946058440}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -25976,29 +25903,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &1946058434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946058432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1171666689}
-  targetPanel: {fileID: 1758051842}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 101098128}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &1946058435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26068,8 +25972,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1946058434}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 1946058440}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -26118,6 +26022,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946058432}
   m_CullTransparentMesh: 1
+--- !u!114 &1946058440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946058432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1171666689}
+  targetPanel: {fileID: 1758051842}
+  answerGroup: {fileID: 101098128}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &1950766282
 GameObject:
   m_ObjectHideFlags: 0
@@ -28695,7 +28616,7 @@ GameObject:
   - component: {fileID: 2118516983}
   - component: {fileID: 2118516982}
   - component: {fileID: 2118516981}
-  - component: {fileID: 2118516980}
+  - component: {fileID: 2118516986}
   m_Layer: 5
   m_Name: ResponseB
   m_TagString: Untagged
@@ -28725,29 +28646,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 778, y: 100}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &2118516980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118516978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db9e3db018a56c4aaa05867b8471baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPanel: {fileID: 1259824446}
-  targetPanel: {fileID: 962827425}
-  answerCorrect: 0
-  npc1AnswerCorrect: 0
-  npc2AnswerCorrect: 0
-  npc3AnswerCorrect: 0
-  npc4AnswerCorrect: 0
-  questionWorth: 0
-  answerGroup: {fileID: 912375548}
-  fadeIn: 0
-  fadeOut: 0
 --- !u!114 &2118516981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28817,8 +28715,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2118516980}
-        m_TargetAssemblyTypeName: AnswerAction, Assembly-CSharp
+      - m_Target: {fileID: 2118516986}
+        m_TargetAssemblyTypeName: BasicResponseAction, Assembly-CSharp
         m_MethodName: ClickAction
         m_Mode: 1
         m_Arguments:
@@ -28867,6 +28765,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118516978}
   m_CullTransparentMesh: 1
+--- !u!114 &2118516986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118516978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5907b13c4d76541ad5a1a421b2fde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPanel: {fileID: 1259824446}
+  targetPanel: {fileID: 962827425}
+  answerGroup: {fileID: 912375548}
+  fadeIn: 0
+  fadeOut: 0
 --- !u!1 &2123584584
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,6 +32,12 @@ public class AnswerAction : MonoBehaviour
             NPC1ScoreManager.instance.AddNPC1Points(questionWorth);
         }
 
+        if (npc1AnswerCorrect == false)
+        {
+            //Wrong answer animation
+            RaccoonAnimator.instance.AnswerWrong(true);
+        }
+
         if (npc2AnswerCorrect == true)
         {
             //Update score
