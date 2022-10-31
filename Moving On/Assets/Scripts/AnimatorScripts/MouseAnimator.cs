@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RaccoonAnimator : MonoBehaviour
+public class MouseAnimator : MonoBehaviour
 {
 
-    public static RaccoonAnimator instance;
+    public static MouseAnimator instance;
 
     public Animator animator;
 
@@ -14,20 +14,20 @@ public class RaccoonAnimator : MonoBehaviour
         instance = this;
     }
 
-    public void AnswerWrong(bool raccoonAnswer)
+    public void AnswerWrong(bool mouseAnswer)
     {
-        if(raccoonAnswer == true)
+        if (mouseAnswer == true)
         {
-            animator.SetBool("Raccoon_answer_wrong", true);
+            animator.SetBool("Mouse_answer_wrong", true);
             StartCoroutine(EndWrongAnimation());
         }
     }
 
-    public void AnswerRight(bool raccoonAnswer)
+    public void AnswerRight(bool mouseAnswer)
     {
-        if (raccoonAnswer == true)
+        if (mouseAnswer == true)
         {
-            animator.SetBool("Raccoon_answer_right", true);
+            animator.SetBool("Mouse_answer_right", true);
             StartCoroutine(EndRightAnimation());
         }
     }
@@ -36,12 +36,12 @@ public class RaccoonAnimator : MonoBehaviour
     IEnumerator EndWrongAnimation()
     {
         yield return new WaitForSeconds(1);
-        animator.SetBool("Raccoon_answer_wrong", false);
+        animator.SetBool("Mouse_answer_wrong", false);
     }
 
     IEnumerator EndRightAnimation()
     {
         yield return new WaitForSeconds(1);
-        animator.SetBool("Raccoon_answer_right", false);
+        animator.SetBool("Mouse_answer_right", false);
     }
 }

@@ -24,12 +24,22 @@ public class AnswerAction : MonoBehaviour
         {
             //Update score
             ScoreManager.instance.AddPoints(questionWorth);
+            //Play right answer animation
+            OppossumAnimator.instance.AnswerRight(true);
+        }
+
+        if (answerCorrect == false)
+        {
+            //Wrong answer animation
+            OppossumAnimator.instance.AnswerWrong(true);
         }
 
         if (npc1AnswerCorrect == true)
         {
             //Update score
             NPC1ScoreManager.instance.AddNPC1Points(questionWorth);
+            //Play animation
+            RaccoonAnimator.instance.AnswerRight(true);
         }
 
         if (npc1AnswerCorrect == false)
@@ -42,6 +52,14 @@ public class AnswerAction : MonoBehaviour
         {
             //Update score
             NPC2ScoreManager.instance.AddNPC2Points(questionWorth);
+            //Play animation
+            MouseAnimator.instance.AnswerRight(true);
+        }
+
+        if (npc2AnswerCorrect == false)
+        {
+            //Wrong answer animation
+            MouseAnimator.instance.AnswerWrong(true);
         }
 
         if (npc3AnswerCorrect == true)
