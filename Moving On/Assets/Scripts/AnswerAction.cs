@@ -26,12 +26,18 @@ public class AnswerAction : MonoBehaviour
             ScoreManager.instance.AddPoints(questionWorth);
             //Play right answer animation
             OppossumAnimator.instance.AnswerRight(true);
+
+            //Play correct answer audio clip
+            FindObjectOfType<SFXManager>().Play("CorrectAnswer");
         }
 
         if (answerCorrect == false)
         {
             //Wrong answer animation
             OppossumAnimator.instance.AnswerWrong(true);
+
+            //Play correct answer audio clip
+            FindObjectOfType<SFXManager>().Play("WrongAnswer");
         }
 
         if (npc1AnswerCorrect == true)
