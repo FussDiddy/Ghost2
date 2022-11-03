@@ -66,12 +66,28 @@ public class AnswerAction : MonoBehaviour
         {
             //Update score
             NPC3ScoreManager.instance.AddNPC3Points(questionWorth);
+            //Play animation
+            SkunkAnimator.instance.AnswerRight(true);
+        }
+
+        if (npc3AnswerCorrect == false)
+        {
+            //Wrong answer animation
+            SkunkAnimator.instance.AnswerWrong(true);
         }
 
         if (npc4AnswerCorrect == true)
         {
             //Update score
             NPC4ScoreManager.instance.AddNPC4Points(questionWorth);
+            //Play animation
+            CoyoteAnimator.instance.AnswerRight(true);
+        }
+
+        if (npc4AnswerCorrect == false)
+        {
+            //Wrong answer animation
+            CoyoteAnimator.instance.AnswerWrong(true);
         }
 
         fadeOut = true;
