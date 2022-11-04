@@ -9,6 +9,8 @@ public class BasicResponseAction : MonoBehaviour
 
     public CanvasGroup answerGroup;
 
+    [SerializeField] int nextCanvasDelay = 0;
+
     public bool fadeIn = false;
     public bool fadeOut = false;
 
@@ -45,7 +47,7 @@ public class BasicResponseAction : MonoBehaviour
 
     IEnumerator MoveToNextCanvas()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(nextCanvasDelay);
         currentPanel.SetActive(false);
         targetPanel.SetActive(true);
     }

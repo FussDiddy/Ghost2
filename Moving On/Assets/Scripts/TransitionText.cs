@@ -13,6 +13,7 @@ public class TransitionText : MonoBehaviour
 	[SerializeField] float timeBtwChars = 0.1f;
 	[SerializeField] string leadingChar = "";
 	[SerializeField] bool leadingCharBeforeDelay = false;
+	[SerializeField] int nextCanvasDelay = 3;
 
 	public GameObject currentPanel;
 	public GameObject targetPanel;
@@ -96,7 +97,7 @@ public class TransitionText : MonoBehaviour
 
 	IEnumerator MoveToNextCanvas()
 	{
-		yield return new WaitForSeconds(3);
+		yield return new WaitForSeconds(nextCanvasDelay);
 		currentPanel.SetActive(false);
 		targetPanel.SetActive(true);
 	}
