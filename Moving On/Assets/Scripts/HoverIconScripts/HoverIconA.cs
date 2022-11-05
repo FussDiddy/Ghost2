@@ -10,6 +10,7 @@ public class HoverIconA : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         ShowIconA();
     }
 
+
     public void OnPointerExit(PointerEventData eventData)
     {
         HoverManagerA.OnMouseLoseFocusA();
@@ -19,5 +20,6 @@ public class HoverIconA : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     {
         HoverManagerA.OnMouseHoverA();
     }
+
 
 }
