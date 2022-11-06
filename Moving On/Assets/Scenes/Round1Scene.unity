@@ -6143,7 +6143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &325458423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8371,7 +8371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &429539487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16077,10 +16077,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1336524016}
+    m_SelectOnDown: {fileID: 1866512477}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -25986,10 +25986,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 790171788}
+    m_SelectOnDown: {fileID: 1689488373}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -27322,6 +27322,7 @@ GameObject:
   - component: {fileID: 1404594483}
   - component: {fileID: 1404594485}
   - component: {fileID: 1404594484}
+  - component: {fileID: 1404594486}
   m_Layer: 0
   m_Name: Pause Panel
   m_TagString: Untagged
@@ -27391,6 +27392,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404594482}
   m_CullTransparentMesh: 1
+--- !u!114 &1404594486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404594482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9027bce2aa5ec3a428f711c4c3632cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstAnswerSelected: {fileID: 790171786}
 --- !u!1 &1415164693
 GameObject:
   m_ObjectHideFlags: 0
@@ -33432,10 +33446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1866512477}
+    m_SelectOnDown: {fileID: 1336524016}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -36391,11 +36405,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnUp: {fileID: 790171788}
+    m_SelectOnDown: {fileID: 1689488373}
+    m_SelectOnLeft: {fileID: 1336524016}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
