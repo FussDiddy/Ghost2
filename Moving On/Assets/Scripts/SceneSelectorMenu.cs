@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseScript : MonoBehaviour
+public class SceneSelectorMenu : MonoBehaviour
 {
     public static bool GamePaused = false;
 
@@ -19,26 +19,16 @@ public class PauseScript : MonoBehaviour
             if (GamePaused)
             {
                 Resume();
-            } 
-            else
-            {
-                Pause();
             }
-        }
-    } 
 
-  public void Resume()
+        }
+    }
+
+    public void Resume()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         GamePaused = false;
-    }
-
-    void Pause()
-    {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
-        GamePaused = true;
     }
 
     public void LoadMenu()
@@ -49,19 +39,5 @@ public class PauseScript : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }
-
-    public void LoadQuiz1(int level)
-    {
-        GamePaused = false;
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(level);
-    }
-
-    public void LoadInterview1(int level)
-    {
-        GamePaused = false;
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(level);
     }
 }

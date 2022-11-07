@@ -16,7 +16,7 @@ public class PlayButton : MonoBehaviour
         //Play the animation
         transition.SetTrigger("Start");
         //Wait
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         //Then the load the scene
         SceneManager.LoadScene(levelIndex);
     }
