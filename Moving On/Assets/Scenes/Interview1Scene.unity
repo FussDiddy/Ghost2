@@ -7327,7 +7327,7 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  nextRoundScene: 2
+  nextRoundScene: 5
 --- !u!114 &985577599
 MonoBehaviour:
   m_ObjectHideFlags: 0
