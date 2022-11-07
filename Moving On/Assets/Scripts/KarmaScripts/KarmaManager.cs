@@ -23,13 +23,14 @@ public class KarmaManager : MonoBehaviour
     
     private void Update()
     {
-        PlayerPrefs.SetInt("Karma", karmaTotal);
+        karmaTotal = PlayerPrefs.GetInt("Karma");
     }
 
     //Adds points to the players score based on how many points the question is worth
     public void AddKarma(int karma)
     {
         karmaTotal += karma;
+        PlayerPrefs.SetInt("Karma", karmaTotal);
     }
 
 }
