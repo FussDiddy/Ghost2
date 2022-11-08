@@ -33,9 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Round2Scene.unity
     guid: 899ff9b736418c748a92e41293eacd75
   - enabled: 0
-    path: Assets/Scenes/RoundCompleteTemp.unity
-    guid: 2910f819622bf044891933655eefb8ee
-  - enabled: 1
-    path: Assets/Scenes/EndCredits.unity
-    guid: 0c42c6ac35a9a2747b5e7c1129345c33
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
