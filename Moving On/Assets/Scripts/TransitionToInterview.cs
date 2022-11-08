@@ -123,7 +123,7 @@ public class TransitionToInterview : MonoBehaviour
 		//Wait
 		yield return new WaitForSeconds(3);
 		//Then the load the scene
-		SceneManager.LoadScene("YouDied");
+		SceneManager.LoadScene(level);
 	}
 
 }
