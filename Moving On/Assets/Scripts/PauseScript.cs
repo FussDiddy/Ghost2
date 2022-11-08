@@ -43,7 +43,7 @@ public class PauseScript : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Splash Screen");
+        SceneManager.LoadScene("TempSceneChange");
     }
 
     public void QuitGame()
