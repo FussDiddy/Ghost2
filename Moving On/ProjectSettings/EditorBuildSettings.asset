@@ -44,9 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndCredits.unity
     guid: 0c42c6ac35a9a2747b5e7c1129345c33
-  - enabled: 1
-    path: Assets/Scenes/YouDied.unity
-    guid: 2635d824f8fbc0e40b51c1d0dfc4311b
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -68,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndCredits.unity
     guid: 0c42c6ac35a9a2747b5e7c1129345c33
+  - enabled: 1
+    path: Assets/Scenes/YouDied.unity
+    guid: 2635d824f8fbc0e40b51c1d0dfc4311b
   m_configObjects: {}

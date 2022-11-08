@@ -3108,11 +3108,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: And would you look at that? Only 2 contestants left. I feel congratulations
-    are in order.... almost. You've made it farther than most, and it seems you've
-    reached the apex of your capability. You've played the game, and now it's time
+  m_text: 'And would you look at that? Only 2 contestants left. I feel congratulations
+    are in order.... almost. You''ve made it farther than most, and it seems you''ve
+    reached the apex of your capability. You''ve played the game, and now it''s time
     to address the grand conclusion. Are you frightened about what awaits you? I
-    would hope by now that you have assessed the stakes of this little contest.
+    would hope by now that you have assessed the stakes of this little contest. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
