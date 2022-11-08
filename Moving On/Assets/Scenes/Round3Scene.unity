@@ -3476,7 +3476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 1774916485}
-  targetPanel: {fileID: 0}
+  targetPanel: {fileID: 1758051842}
   answerGroup: {fileID: 510235728}
   nextCanvasDelay: 0
   fadeIn: 0
@@ -8314,8 +8314,8 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  nextRoundScene: 4
-  deathScene: 3
+  nextRoundScene: 8
+  deathScene: 16
   scoreManager: {fileID: 15693903}
   passingScore: 19
 --- !u!114 &531459033
@@ -24583,7 +24583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 638963635}
-  targetPanel: {fileID: 0}
+  targetPanel: {fileID: 1758051842}
   answerGroup: {fileID: 1398955585}
   nextCanvasDelay: 0
   fadeIn: 0
@@ -33351,7 +33351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 232544456}
-  targetPanel: {fileID: 0}
+  targetPanel: {fileID: 1758051842}
   answerGroup: {fileID: 936928257}
   nextCanvasDelay: 0
   fadeIn: 0
@@ -34994,7 +34994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPanel: {fileID: 2102708849}
-  targetPanel: {fileID: 0}
+  targetPanel: {fileID: 1758051842}
   answerGroup: {fileID: 1073680236}
   nextCanvasDelay: 0
   fadeIn: 0

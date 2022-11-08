@@ -13446,8 +13446,8 @@ MonoBehaviour:
   timeBtwChars: 0.05
   leadingChar: 
   leadingCharBeforeDelay: 0
-  nextRoundScene: 4
-  deathScene: 3
+  nextRoundScene: 6
+  deathScene: 16
   scoreManager: {fileID: 15693903}
   passingScore: 29
 --- !u!114 &531459033

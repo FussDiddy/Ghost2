@@ -14649,7 +14649,7 @@ MonoBehaviour:
   leadingChar: 
   leadingCharBeforeDelay: 0
   nextRoundScene: 4
-  deathScene: 3
+  deathScene: 16
   scoreManager: {fileID: 15693903}
   passingScore: 20
 --- !u!114 &531459033
