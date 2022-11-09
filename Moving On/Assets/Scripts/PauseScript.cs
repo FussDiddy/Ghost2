@@ -51,17 +51,11 @@ public class PauseScript : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadQuiz1(int level)
+    public void LoadLevel(int level)
     {
         GamePaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(level);
     }
 
-    public void LoadInterview1(int level)
-    {
-        GamePaused = false;
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(level);
-    }
 }
