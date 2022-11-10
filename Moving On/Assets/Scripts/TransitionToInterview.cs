@@ -46,6 +46,20 @@ public class TransitionToInterview : MonoBehaviour
 
 	}
 
+	private void Update()
+	{
+
+		if (Input.GetKeyDown(KeyCode.Return))
+		{
+			SpeedText();
+		}
+
+		if (Input.GetKeyDown(KeyCode.KeypadEnter))
+		{
+			SpeedText();
+		}
+	}
+
 
 	//Unused
 	IEnumerator TypeWriterText()
@@ -126,4 +140,8 @@ public class TransitionToInterview : MonoBehaviour
 		SceneManager.LoadScene(level);
 	}
 
+	private void SpeedText()
+	{
+		timeBtwChars = .0001f;
+	}
 }

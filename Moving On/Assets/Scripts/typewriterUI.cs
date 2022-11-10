@@ -57,6 +57,7 @@ public class typewriterUI : MonoBehaviour
 				}
 			}
 		}
+
 	}
 
 	//Unused

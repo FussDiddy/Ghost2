@@ -41,6 +41,20 @@ public class TransitionToNextRound : MonoBehaviour
 
 	}
 
+	private void Update()
+	{
+
+		if (Input.GetKeyDown(KeyCode.KeypadEnter))
+		{
+			SpeedText();
+		}
+
+		if (Input.GetKeyDown(KeyCode.Return))
+		{
+			SpeedText();
+		}
+	}
+
 
 	//Unused
 	IEnumerator TypeWriterText()
@@ -102,6 +116,11 @@ public class TransitionToNextRound : MonoBehaviour
 		yield return new WaitForSeconds(3);
 		//Then the load the scene
 		SceneManager.LoadScene(level);
+	}
+
+	private void SpeedText()
+	{
+		timeBtwChars = .0001f;
 	}
 
 }

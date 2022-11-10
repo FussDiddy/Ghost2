@@ -41,6 +41,19 @@ public class TransitionText : MonoBehaviour
 		}
 
 	}
+	private void Update()
+	{
+
+		if (Input.GetKeyDown(KeyCode.Return))
+		{
+			SpeedText();
+		}
+
+		if (Input.GetKeyDown(KeyCode.KeypadEnter))
+		{
+			SpeedText();
+		}
+	}
 
 
 	//Unused
@@ -100,5 +113,10 @@ public class TransitionText : MonoBehaviour
 		yield return new WaitForSeconds(nextCanvasDelay);
 		currentPanel.SetActive(false);
 		targetPanel.SetActive(true);
+	}
+
+	private void SpeedText()
+	{
+		timeBtwChars = .0001f;
 	}
 }
