@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 205760175}
   - component: {fileID: 205760174}
   - component: {fileID: 205760178}
+  - component: {fileID: 205760179}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -311,6 +312,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstAnswerSelected: {fileID: 433853773}
+--- !u!114 &205760179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205760173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93527fa9ce83e9746951ceb149ed4f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!1 &433853773
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +680,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 205760179}
         m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
